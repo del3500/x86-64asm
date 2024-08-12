@@ -1,0 +1,38 @@
+Computational registers
+
+1. %rax - This is the accumulator. It is the most widely used general-purpose register for computation.
+2. %rbx - This is known as the "base" register. This is often used for indexed addressing.
+3. %rcx - aka "counter" register. It is historically used for counts when doing repetitive loops.
+4. %rdx - aka "data" register. It has some special significance in certain arithmetic operations
+	  and input/output operations and is also sometimes used in some instructions in coordination
+	  with %rax, such as with the divq instruction.
+
+These next 4 registers are still considered "general purpose" registers because they can be used in
+computation, but they are actually focused on specific tasks.
+
+5. %rsi - This is the "source index" register. It has special uses for working with longer spans of memory.
+6. %rdi - This is the "destination index" register. It is often used in conjuction with %rsi for working
+	  with longer spans of memory.
+7. %rbp - This is the "base pointer" register. 
+8. %rsp - This is the "stack pointer" register. 
+
+The x86-64 ISA gives us eight new general-purpose registers. These are simply labeled as %r8 through %r15.
+
+These registers also have a 32-bit, 16-bit, and individual-byte version. For instance,
+%r11 refers to the whole 64-bit version of the register. However, you can refer to the 32-bit version
+by specifying %r11d, the 16-bit version by specifying %r11w, and the least signicant (low) byte by specifying
+%r11b. Each of the new general-purpose registers can be accessed in this way.
+
+However, with the new general-purpose registers, you can only access the least significant (low) byte of the 16-bit
+version. This is designed to reduce the complexity of the newer register.
+================================================================================================================
+%rdx - 64-bit register
+%dx  - 16-bit register (combination of %dl and %dh)
+%dh  - most signicant bit of the 16-bit register (8-15 bits)
+%dl  - least signicant bit of the 16-bit register (0-8 bits)
+================================================================================================================
+%rcx - 64-bit register
+%cx  - 16-bit register (combination of %cl and %ch)
+%ch  - most signicant bit of the 16-bit register (8-15 bits)
+%cl  - least signicant bit of the 16-bit register (0-8 bits)
+================================================================================================================
