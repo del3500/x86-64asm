@@ -70,11 +70,8 @@ version. This is designed to reduce the complexity of the newer register.
 %bp  - 16-bit register (inaccessible in 64-bit mode)
 %bpl - 8-bit register (lower)
 ===============================================================================================================
-%r8 to %r15
-
-
-
-
-
-
+%r8  to %r15   - 64-bit registers
+%r8d to %r15d  - 32-bit registers
+%r8w to %r15w  - 16-bit registers
+%r8l to %r15l  - 8-bit  registers (lower)
 
