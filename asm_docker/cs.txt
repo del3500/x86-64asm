@@ -74,4 +74,11 @@ version. This is designed to reduce the complexity of the newer register.
 %r8d to %r15d  - 32-bit registers
 %r8w to %r15w  - 16-bit registers
 %r8l to %r15l  - 8-bit  registers (lower)
+===============================================================================================================
+
+Special-purpose registers
+
+%rip - 64 bit register. This is an instruction pointer register, where it will tell the cpu to where
+			to execute the next instruction. You won't need to directly access this register
+			because you'll be mostlikely to modify the %rip register through the jmp instruction.
 
