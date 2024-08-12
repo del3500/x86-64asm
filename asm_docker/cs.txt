@@ -26,13 +26,55 @@ by specifying %r11d, the 16-bit version by specifying %r11w, and the least signi
 However, with the new general-purpose registers, you can only access the least significant (low) byte of the 16-bit
 version. This is designed to reduce the complexity of the newer register.
 ================================================================================================================
-%rdx - 64-bit register
-%dx  - 16-bit register (combination of %dl and %dh)
-%dh  - most signicant bit of the 16-bit register (8-15 bits)
-%dl  - least signicant bit of the 16-bit register (0-8 bits)
-================================================================================================================
+%rax - 64-bit register
+%eax - 32-bit register
+%ax  - 16-bit register
+%ah  - 8-bit register (higher)
+%al  - 8-bit register (lower)
+===============================================================================================================
+%rbx - 64-bit register
+%ebx - 32-bit register
+%bx  - 16-bit register
+%bh  - 8-bit register (higher)
+%bl  - 8-bit register (lower)
+===============================================================================================================
 %rcx - 64-bit register
-%cx  - 16-bit register (combination of %cl and %ch)
-%ch  - most signicant bit of the 16-bit register (8-15 bits)
-%cl  - least signicant bit of the 16-bit register (0-8 bits)
-================================================================================================================
+%ecx - 32-bit register
+%cx  - 16-bit register
+%ch  - 8-bit register (higher)
+%cl  - 8-bit register (lower)
+===============================================================================================================
+%rdx - 64-bit register
+%edx - 32-bit register
+%dx  - 16-bit register
+%dh  - 8-bit register (higher)
+%dl  - 8-bit register (lower)
+===============================================================================================================
+%rsi - 64-bit register
+%esi - 32-bit register
+%si  - 16-bit register
+%sil - 8-bit register (lower)
+===============================================================================================================
+%rdi - 64-bit register
+%edi - 32-bit register
+%di  - 16-bit register
+%dil - 8-bit register (lower)
+===============================================================================================================
+%rsp - 64-bit register
+%esp - 32-bit register
+%sp  - 16-bit register (inaccessible in 64-bit mode)
+%spl - 8-bit register (lower)
+===============================================================================================================
+%rbp - 64-bit register
+%ebp - 32-bit register
+%bp  - 16-bit register (inaccessible in 64-bit mode)
+%bpl - 8-bit register (lower)
+===============================================================================================================
+%r8 to %r15
+
+
+
+
+
+
+
