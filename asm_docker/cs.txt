@@ -29,31 +29,31 @@ version. This is designed to reduce the complexity of the newer register.
 %rax - 64-bit register
 %eax - 32-bit register
 %ax  - 16-bit register
-%ah  - 8-bit register (higher)
-%al  - 8-bit register (lower)
+%ah  - 8-bit  register (higher)
+%al  - 8-bit  register (lower)
 ===============================================================================================================
 %rbx - 64-bit register
 %ebx - 32-bit register
 %bx  - 16-bit register
-%bh  - 8-bit register (higher)
-%bl  - 8-bit register (lower)
+%bh  - 8-bit  register (higher)
+%bl  - 8-bit  register (lower)
 ===============================================================================================================
 %rcx - 64-bit register
 %ecx - 32-bit register
 %cx  - 16-bit register
-%ch  - 8-bit register (higher)
-%cl  - 8-bit register (lower)
+%ch  - 8-bit  register (higher)
+%cl  - 8-bit  register (lower)
 ===============================================================================================================
 %rdx - 64-bit register
 %edx - 32-bit register
 %dx  - 16-bit register
-%dh  - 8-bit register (higher)
-%dl  - 8-bit register (lower)
+%dh  - 8-bit  register (higher)
+%dl  - 8-bit  register (lower)
 ===============================================================================================================
 %rsi - 64-bit register
 %esi - 32-bit register
 %si  - 16-bit register
-%sil - 8-bit register (lower)
+%sil - 8-bit  register (lower)
 ===============================================================================================================
 %rdi - 64-bit register
 %edi - 32-bit register
@@ -63,12 +63,12 @@ version. This is designed to reduce the complexity of the newer register.
 %rsp - 64-bit register
 %esp - 32-bit register
 %sp  - 16-bit register (inaccessible in 64-bit mode)
-%spl - 8-bit register (lower)
+%spl - 8-bit  register (lower)
 ===============================================================================================================
 %rbp - 64-bit register
 %ebp - 32-bit register
 %bp  - 16-bit register (inaccessible in 64-bit mode)
-%bpl - 8-bit register (lower)
+%bpl - 8-bit  register (lower)
 ===============================================================================================================
 %r8  to %r15   - 64-bit registers
 %r8d to %r15d  - 32-bit registers
@@ -78,7 +78,9 @@ version. This is designed to reduce the complexity of the newer register.
 
 Special-purpose registers
 
-%rip - 64 bit register. This is an instruction pointer register, where it will tell the cpu to where
-			to execute the next instruction. You won't need to directly access this register
-			because you'll be mostlikely to modify the %rip register through the jmp instruction.
-
+%rip    - 64 bit register.   This is an instruction pointer register, where it will tell the cpu to where
+			     to execute the next instruction. You won't need to directly access this register
+			     because you'll be mostlikely to modify the %rip register through the jmp instruction.
+%eflags - 32-bit register    ZF - Zero flag is set to 1 if the result of the last arithmetic is 0, else, 0.
+			     CF - Carry flag is set to 1 if the result of the last arithmetic resulted in "carry",
+				  -- that is, the result was bigger than could be held in the destination register.
